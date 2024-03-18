@@ -45,7 +45,7 @@ pipeline {
                 }
             }
         }
-        stage("Docker Run :Preprod") {
+        stage("Docker Run :Development") {
             steps {
                 script {                    
                     // Se detiene y elimina el contenedor si ya está en ejecución
@@ -84,6 +84,21 @@ pipeline {
                     }
                 }
             }
+        }
+        stage("Deploy to Elastic Beanstalk - Preprod") {
+            steps {
+                script {
+                    // Asigna el nombre de la aplicación y el entorno de Elastic Beanstalk
+                    def appName = "productsApi"
+                    def envName = "productsApiPreprod"
+
+                    // Crea una nueva versión de la aplicación en Elastic Beanstalk utilizando el archivo Dockerrun.aws.json de S3
+                    sh "aws elasticbeanstalk create-application-version --application-name ${appName} --version-label ${BUILD_NUMBER} --source-bundle S3Bucket=\"productsapicppbucket\",S3Key=\"${BUILD_NUMBER}/Dockerrun.aws.json\""
+
+                    // Actualiza el entorno de Elastic Beanstalk para usar la nueva versión de la aplicación
+                    sh "aws elasticbeanstalk update-environment --application-name ${appName} --environment-name ${envName} --version-label ${BUILD_NUMBER}"
+                }
+             }
         }
 
     }
