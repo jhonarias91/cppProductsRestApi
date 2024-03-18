@@ -138,6 +138,41 @@ Primero, almacenar las credenciales de Docker Hub (o de cualquier otro registro 
 Esta credencial será usada en la stage: "Login Push Docker Image" del Pipeline.
 
 
+#### Agregar credentials AWS ()
+
+Primero, almacenar las credenciales de AWS en Jenkins:
+
+1. Instalar el plugin AWS CredentialsVersion 218.v1b_e9466ec5da_ o superior. 
+2. Ve al panel de Jenkins.
+3. Haz clic en “Manage Jenkins” > “Manage Credentials”.
+4. Selecciona el almacen (store) y el dominio adecuados donde deseas guardar tus credenciales.
+5. AWS Credentials
+6. Asignar un id: "awsCredentials"
+7. Para conseguir el Access Key ID y Secret Access Key:
+ - Ir a IAM, seleccionar o crear un usuario
+ - Al grupo de ese usuario darle permisos de S3.
+ - Click en el usuario y buscar Security Credentials
+ - En Access keys (0), darle en create access key:
+ - Seleccionar Third-party service.
+ - user_access_key_thirdparty
+ - Created access key.
+ - Copiar ambos valores en Jenkins.
+8. Create.
+
+. Al grupo del usuario agregar AmazonS3FullAccess.
+
+Esta credencial será usada en la stage: "Login Push Docker Image" del Pipeline.
+
+#### Crear bucket en S3
+
+Se debe crear un bucket en S3 para subir el archivo Dockerrun.aws.json 
+que es el que va a leer el beanstalk.
+
+ 1. En Amazon S3 crear nuevo bucket
+ 2. Dar cualquier nombre como: "productsapicppbucket"
+ 3. Create bucket
+
+
 ### Docker deploy
 
 - Instalar docker

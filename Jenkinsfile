@@ -45,7 +45,7 @@ pipeline {
                 }
             }
         }
-        stage("Deploy-EC2") {
+        stage("Docker Run :Preprod") {
             steps {
                 script {                    
                     // Se detiene y elimina el contenedor si ya está en ejecución
@@ -56,5 +56,35 @@ pipeline {
                 }
             }
         }
+        stage("Prepare and Upload Dockerrun.aws.json") {
+            steps {
+                script {
+                    // Usar withCredentials para acceder a las credentials defindias en awsCredentials
+                    withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'awsCredentials']]) {
+                        // Comandos AWS CLI
+                        // Se crea el archivo Dockerrun.aws.json para que beanstalk lo lea
+                        sh """
+                        cat > Dockerrun.aws.json <<EOL
+                        {
+                            "AWSEBDockerrunVersion": "1",
+                            "Image": {
+                                "Name": "jhonarias91/productsapirepo:v0.0.${BUILD_NUMBER}",
+                                "Update": "true"
+                            },
+                            "Ports": [
+                                {
+                                    "ContainerPort": "5000"
+                                }
+                            ]
+                        }
+                        EOL
+                        """
+                        // Sube el archivo a S3
+                        sh "aws s3 cp Dockerrun.aws.json s3://productsapicppbucket/${BUILD_NUMBER}/Dockerrun.aws.json"
+                    }
+                }
+            }
+        }
+
     }
 }
