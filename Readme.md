@@ -202,8 +202,7 @@ que es el que va a leer el beanstalk.
     2. Next
 6. Review
     1. Submit
-
-    
+   
 
 
 
