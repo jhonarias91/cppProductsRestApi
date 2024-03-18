@@ -117,7 +117,8 @@ Update your local package index, then finally install Jenkins:
  - Instalar los pluguins recomendados.
  - Instalar el GitHub Plugin para los webhooks
  - test webhook
-
+ - Instalar AWS CLI en el Agente de Jenkins (EC2) para poder correr comandos de aws.
+    ```sudo apt-get install awscli```
 #### Crear repository en dockerhub
 
 - Crear un repositorio en: https://hub.docker.com/
@@ -138,7 +139,7 @@ Primero, almacenar las credenciales de Docker Hub (o de cualquier otro registro 
 Esta credencial será usada en la stage: "Login Push Docker Image" del Pipeline.
 
 
-#### Agregar credentials AWS ()
+#### Agregar credentials AWS
 
 Primero, almacenar las credenciales de AWS en Jenkins:
 

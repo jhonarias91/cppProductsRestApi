@@ -68,7 +68,7 @@ pipeline {
                         {
                             "AWSEBDockerrunVersion": "1",
                             "Image": {
-                                "Name": "jhonarias91/productsapirepo:v0.0.${BUILD_NUMBER}",
+                                "Name": "${DOCKER_IMAGE}",
                                 "Update": "true"
                             },
                             "Ports": [
