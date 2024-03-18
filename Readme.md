@@ -119,6 +119,7 @@ Update your local package index, then finally install Jenkins:
  - test webhook
  - Instalar AWS CLI en el Agente de Jenkins (EC2) para poder correr comandos de aws.
     ```sudo apt-get install awscli```
+
 #### Crear repository en dockerhub
 
 - Crear un repositorio en: https://hub.docker.com/
@@ -172,6 +173,38 @@ que es el que va a leer el beanstalk.
  1. En Amazon S3 crear nuevo bucket
  2. Dar cualquier nombre como: "productsapicppbucket"
  3. Create bucket
+
+#### Crear Elastic Beanstalk enviroments
+
+1. Configure environment
+    1. Ir a Elastic Beanstalk
+    2. Create application
+    3. Application name: "productsApi"
+    4. Environment name: productsApi-preprod
+    5. Seleccionar la región en este caso(us-east-2)
+    6. Platform: Docker
+    7. Single instance
+    8. Next
+2. Configure service access
+    1. Service role: seleccionar el role del usuario con las credenciales asignadas en Jenkins
+    2. EC2 instance profile: Mismo del de las credenciales
+    3. Next
+3. Set up networking, database, and tags
+    1. No VPC.
+    2. Next
+4. Configure instance traffic and scaling
+    1. EC2 security groups: seleccionar los del usuario con las credenciales
+    2. Instaces types: t3.micro, t3.small
+    3. AMI ID: nos dío (ami-0ccc7b852467bcc7f)    
+    4. Next
+5. Configure updates, monitoring, and logging
+    1. Todo por defecto
+    2. Next
+6. Review
+    1. Submit
+
+    
+
 
 
 ### Docker deploy
