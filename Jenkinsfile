@@ -68,7 +68,7 @@ pipeline {
                             // Comandos AWS CLI
                             // Se crea el archivo Dockerrun.aws.json para que beanstalk lo lea
                             sh """
-                            cat > Dockerrun.aws.json << EOL
+                            cat > Dockerrun.aws.json <<
                             {
                                 "AWSEBDockerrunVersion": "1",
                                 "Image": {
