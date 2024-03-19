@@ -365,5 +365,20 @@ Agregar el token de auth. Ver en la página
 
 
 
-
+sh """
+                            cat > Dockerrun.aws.json <<EOL
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+        "Name": "${DOCKER_IMAGE}",
+        "Update": "true"
+    },
+    "Ports": [
+        {
+            "ContainerPort": "5000"
+        }
+    ]
+}
+EOL
+                            """"
 
