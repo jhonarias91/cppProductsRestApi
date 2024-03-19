@@ -19,7 +19,7 @@ WORKDIR /app/src
 RUN g++ -std=c++11 -o productsapp main.cpp functions.cpp -lcpprest -lboost_system -lssl -lcrypto
 
 # Exponemos el puerto en el que corre la app productos api.
-EXPOSE 5000
+EXPOSE 4300
 
 # Se le otorgan permisos para que se ejecute sin inconvenientes.
 RUN chmod +x ./productsapp
