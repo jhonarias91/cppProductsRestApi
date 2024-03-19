@@ -8,6 +8,7 @@ pipeline {
         AWS_REGION = 'us-east-2'
         BEANSTALK_API_NAME = 'productsApi'
         BEANSTALK_API_PREPROD_ENV = 'productsApi-preprod'
+        BEANSTALK_API_PROD_ENV = 'productsApi-pro'
         
     }
     stages {
@@ -67,18 +68,22 @@ pipeline {
                     script {                    
                             // Comandos AWS CLI
                             // Se crea el archivo Dockerrun.aws.json para que beanstalk lo lea
-                            echo '{
-    "AWSEBDockerrunVersion": "1",
-    "Image": {
-        "Name": "${DOCKER_IMAGE}",
-        "Update": "true"
-    },
-    "Ports": [
-        {
-            "ContainerPort": "5000"
-        }
-    ]
-}' > Dockerrun.aws.json 
+                            sh """
+                            cat > Dockerrun.aws.json <<EOL
+    {
+        "AWSEBDockerrunVersion": "1",
+        "Image": {
+            "Name": "${DOCKER_IMAGE}",
+            "Update": "true"
+        },
+        "Ports": [
+            {
+                "ContainerPort": "5000"
+            }
+        ]
+    }
+EOL
+                            """
                             // Sube el archivo a S3
                             sh "aws s3 cp Dockerrun.aws.json s3://productsapicppbucket/${BUILD_NUMBER}/Dockerrun.aws.json"
                     }
@@ -95,7 +100,7 @@ pipeline {
                         sh "aws elasticbeanstalk create-application-version --region ${AWS_REGION} --application-name ${BEANSTALK_API_NAME} --version-label ${BUILD_NUMBER} --source-bundle S3Bucket=\"productsapicppbucket\",S3Key=\"${BUILD_NUMBER}/Dockerrun.aws.json\""
 
                         // Actualiza el entorno de Elastic Beanstalk para usar la nueva versión de la aplicación
-                        sh "aws elasticbeanstalk update-environment --application-name ${BEANSTALK_API_NAME} --region ${AWS_REGION} --environment-name ${BEANSTALK_API_PREPROD_ENV} --version-label ${BUILD_NUMBER}"
+                        sh "aws elasticbeanstalk update-environment --application-name ${BEANSTALK_API_NAME} --region ${AWS_REGION} --environment-name ${BEANSTALK_API_PROD_ENV} --version-label ${BUILD_NUMBER}"
                     }
                 }
             }
