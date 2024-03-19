@@ -73,7 +73,7 @@ pipeline {
     {
     "AWSEBDockerrunVersion": "1",
     "Image": {
-        "Name": ${DOCKER_IMAGE},
+        "Name": "${DOCKER_IMAGE}",
         "Update": "true"
     },
     "Ports": [
