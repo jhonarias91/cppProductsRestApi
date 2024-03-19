@@ -81,7 +81,7 @@ pipeline {
                                     }
                                 ]
                             }
-                            EOL
+EOL
                             """
                             // Sube el archivo a S3
                             sh "aws s3 cp Dockerrun.aws.json s3://productsapicppbucket/${BUILD_NUMBER}/Dockerrun.aws.json"
