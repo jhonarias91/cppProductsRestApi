@@ -105,7 +105,7 @@ EOL
                         sh "aws elasticbeanstalk create-application-version --region ${AWS_REGION} --application-name ${BEANSTALK_API_NAME} --version-label ${BUILD_NUMBER} --source-bundle S3Bucket=\"productsapicppbucket\",S3Key=\"${BUILD_NUMBER}/Dockerrun.aws.json\""
 
                         // Actualiza el entorno de Elastic Beanstalk para usar la nueva versión de la aplicación
-                        sh "aws elasticbeanstalk update-environment --application-name ${BEANSTALK_API_NAME} --region ${AWS_REGION} --environment-name ${BEANSTALK_API_PREPROD_ENV} --version-label ${BUILD_NUMBER}"
+                        sh "aws elasticbeanstalk update-environment --application-name ${BEANSTALK_API_NAME} --region ${AWS_REGION} --environment-name ${BEANSTALK_API_PROD_ENV} --version-label ${BUILD_NUMBER}"
                     }
                 }
             }
