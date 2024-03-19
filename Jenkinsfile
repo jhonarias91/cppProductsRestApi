@@ -69,18 +69,18 @@ pipeline {
                             // Se crea el archivo Dockerrun.aws.json para que beanstalk lo lea
                             sh """
                             cat > Dockerrun.aws.json <<EOL
-                            {
-                                "AWSEBDockerrunVersion": "1",
-                                "Image": {
-                                    "Name": "${DOCKER_IMAGE}",
-                                    "Update": "true"
-                                },
-                                "Ports": [
-                                    {
-                                        "ContainerPort": "5000"
-                                    }
-                                ]
-                            }
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+        "Name": "${DOCKER_IMAGE}",
+        "Update": "true"
+    },
+    "Ports": [
+        {
+            "ContainerPort": "5000"
+        }
+    ]
+}
 EOL
                             """
                             // Sube el archivo a S3
