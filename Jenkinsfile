@@ -78,7 +78,8 @@ pipeline {
     },
     "Ports": [
         {
-            "ContainerPort": "5000"
+            "ContainerPort": "5000",
+            "HostPort": "5000"
         }
     ]
 }
