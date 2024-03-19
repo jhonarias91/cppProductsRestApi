@@ -68,7 +68,7 @@ pipeline {
                             // Comandos AWS CLI
                             // Se crea el archivo Dockerrun.aws.json para que beanstalk lo lea
                             sh """
-                            cat > Dockerrun.aws.json <<
+                            cat > Dockerrun.aws.json <<EOL
                             {
                                 "AWSEBDockerrunVersion": "1",
                                 "Image": {
@@ -80,7 +80,7 @@ pipeline {
                                         "ContainerPort": "5000"
                                     }
                                 ]
-                            }
+                            }EOL
                             """
                             // Sube el archivo a S3
                             sh "aws s3 cp Dockerrun.aws.json s3://productsapicppbucket/${BUILD_NUMBER}/Dockerrun.aws.json"

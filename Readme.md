@@ -359,6 +359,11 @@ Agregar el token de auth. Ver en la página
  Entrar a la EC2 instance: ```cat /var/log/eb-engine.log```
 
 
+ ### Notes
+ - Delete eventually docker images
+  ```docker image prune -a```
+
+
 
 
 
