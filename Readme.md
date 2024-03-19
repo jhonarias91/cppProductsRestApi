@@ -199,8 +199,9 @@ que es el que va a leer el beanstalk.
     3. AMI ID: nos dío (ami-0ccc7b852467bcc7f)    
     4. Next
 5. Configure updates, monitoring, and logging
-    1. Todo por defecto
-    2. Next
+    1. Platform software
+    2. Container options Proxy server -> None
+    3. Next
 6. Review
     1. Submit
 
