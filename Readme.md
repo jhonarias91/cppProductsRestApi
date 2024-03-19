@@ -358,7 +358,9 @@ Agregar el token de auth. Ver en la página
 
 - Log beansttalk 
  
- Entrar a la EC2 instance: ```cat /var/log/eb-engine.log```
+ Entrar a la EC2 instance: 
+  
+  ```cat /var/log/eb-engine.log```
 
 
  ### Notes

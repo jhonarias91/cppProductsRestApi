@@ -71,22 +71,18 @@ pipeline {
                             sh """
                             cat > Dockerrun.aws.json <<EOL
     {
-"AWSEBDockerrunVersion": "2",
-"containerDefinitions": [
-    {
-        "name":"productsapi",
-        "image": "${DOCKER_IMAGE}",
-        "essential": "true",
-        "memory":64,
-        "portMappings": [
-            {
-                "hostPort": 5000,
-                "containerPort": 5000
-            }
-        ]
-    }
-  ]
-  }
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+        "Name": ${DOCKER_IMAGE},
+        "Update": "true"
+    },
+    "Ports": [
+        {
+            "ContainerPort": "5000"
+        }
+    ]
+}
+
 EOL
                             """
                             // Sube el archivo a S3
