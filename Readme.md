@@ -153,6 +153,7 @@ Primero, almacenar las credenciales de AWS en Jenkins:
 7. Para conseguir el Access Key ID y Secret Access Key:
  - Ir a IAM, seleccionar o crear un usuario
  - Al grupo de ese usuario darle permisos de S3.
+ - Darle la política de: "AdministratorAccess-AWSElasticBeanstalk" para poder crear Beanstalk
  - Click en el usuario y buscar Security Credentials
  - En Access keys (0), darle en create access key:
  - Seleccionar Third-party service.
@@ -202,9 +203,6 @@ que es el que va a leer el beanstalk.
     2. Next
 6. Review
     1. Submit
-   
-
-
 
 ### Docker deploy
 
@@ -354,11 +352,12 @@ Agregar el token de auth. Ver en la página
 ```ngrok http http://localhost:8080```
 
 
-### Docker Image
+### Logs
 
-- Agregar la SSH a las credenciales de Jenkis 
-usando private key en username poner el de la ec2: ubuntu 
-y asignar un id o dejar que lo genere (1540cfc2-b32f-48a6-820c-54e3a9ab0c95)
+- Log beansttalk 
+ 
+ Entrar a la EC2 instance: ```cat /var/log/eb-engine.log```
+
 
 
 
