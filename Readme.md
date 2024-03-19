@@ -204,6 +204,8 @@ que es el que va a leer el beanstalk.
 6. Review
     1. Submit
 
+    No olvidar agregar al segurity group de la EC2 el tcp 5000 anywhere
+
 ### Docker deploy
 
 - Instalar docker
@@ -362,23 +364,4 @@ Agregar el token de auth. Ver en la página
  ### Notes
  - Delete eventually docker images
   ```docker image prune -a```
-
-
-
-sh """
-                            cat > Dockerrun.aws.json <<EOL
-{
-    "AWSEBDockerrunVersion": "1",
-    "Image": {
-        "Name": "${DOCKER_IMAGE}",
-        "Update": "true"
-    },
-    "Ports": [
-        {
-            "ContainerPort": "5000"
-        }
-    ]
-}
-EOL
-                            """"
 
