@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 COPY . /app
 
 # Se Establece el directorio de trabajo
-WORKDIR /app/src
+WORKDIR /app
 
 # Compilar la aplicación
 RUN g++ -std=c++11 -o productsapp main.cpp functions.cpp -lcpprest -lboost_system -lssl -lcrypto
