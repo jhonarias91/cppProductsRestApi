@@ -41,14 +41,14 @@ En la carpeta src:
     ```./productsapp```
 
 - *Consumirlo*
-    ```curl "http://localhost:5000/health"```
-    - local: ```curl "http://localhost:5000?id=200"```
+    ```curl "http://localhost:4300/health"```
+    - local: ```curl "http://localhost:4300?id=200"```
     
  #### *End-points:* 
 
  - _*Delete*_
 
-    http://localhost:5000/delete/{productId}
+    http://localhost:4300/delete/{productId}
   
 
 
@@ -92,7 +92,7 @@ En la carpeta src:
     - Edit inbound rules 
     - Add rule
     - Custom TCP - 8080 - Anywhere
-    - Custom TCP - 5000 - Anywhere
+    - Custom TCP - 4300 - Anywhere
     - SSH - 22 - Anywhere
     - Save rules
 9. Launch Instance
@@ -222,7 +222,7 @@ que es el que va a leer el beanstalk.
 6. Review
     1. Submit
 
-    No olvidar agregar al segurity group de la EC2 el tcp 5000 anywhere
+    No olvidar agregar al segurity group de la EC2 el tcp 4300 anywhere
 
 ### Docker deploy
 
@@ -265,7 +265,7 @@ que es el que va a leer el beanstalk.
 
 - Verificamos que el puerto no esté ocupado
 
-  ```lsof -i :5000```
+  ```lsof -i :4300```
   
   - Jenkis pipeline
 

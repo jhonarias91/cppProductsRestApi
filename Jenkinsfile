@@ -29,7 +29,13 @@ pipeline {
                     sh "g++ -std=c++11 -o runUnitTest ./src/unitTest.cpp ./src/functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto"
                     sh "./runUnitTest"
                 }
-            }        
+            }  
+        stage("IntegrationTest")  {
+        steps {
+                sh "g++ -std=c++11 -o runIntegrationTest ./src/integrationTest.cpp ./src/functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto"
+                sh "./runIntegrationTest"
+            }
+        }        
         stage("Dockerize") {
             steps {
                 script {
@@ -57,7 +63,7 @@ pipeline {
                     sh "docker stop ${DOCKER_CONTAINER_NAME} || true && docker rm ${DOCKER_CONTAINER_NAME} || true"
                     
                     // Se ejecuta el contenedor
-                    sh "docker run -d --name ${DOCKER_CONTAINER_NAME} -p 5000:5000 ${DOCKER_IMAGE}"
+                    sh "docker run -d --name ${DOCKER_CONTAINER_NAME} -p 4300:4300 ${DOCKER_IMAGE}"
                 }
             }
         }

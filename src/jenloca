@@ -35,7 +35,7 @@ pipeline {
                     sh "docker stop ${DOCKER_CONTAINER_NAME} || true && docker rm ${DOCKER_CONTAINER_NAME} || true"
                     
                     // Ejecutar el contenedor
-                    sh "docker run -d --name ${DOCKER_CONTAINER_NAME} -p 5000:5000 ${DOCKER_IMAGE}"
+                    sh "docker run -d --name ${DOCKER_CONTAINER_NAME} -p 4300:4300 ${DOCKER_IMAGE}"
                 }
             }
         }
