@@ -16,7 +16,7 @@ COPY . /app
 WORKDIR /app
 
 # Compilar la aplicación
-RUN g++ -std=c++11 -o productsapp main.cpp functions.cpp -lcpprest -lboost_system -lssl -lcrypto
+RUN g++ -std=c++11 -o productsapp ./src/main.cpp ./src/functions.cpp -lcpprest -lboost_system -lssl -lcrypto
 
 # Exponemos el puerto en el que corre la app productos api.
 EXPOSE 4300
