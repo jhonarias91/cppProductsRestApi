@@ -44,7 +44,7 @@ pipeline {
                 }
             }
         }
-        stage('Login Push Docker Image') {
+        stage('Push Docker Image') {
             steps {
                 script {
                     // Usar credenciales de Jenkins para login en Docker Hub
@@ -67,7 +67,7 @@ pipeline {
                 }
             }
         }
-        stage("Prepare and Upload Dockerrun.aws.json") {
+        stage("Upload Dockerrun.aws.json") {
             steps {
                 // Usar withCredentials para acceder a las credentials defindias en awsCredentials
                 withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'awsCredentials']]) {
@@ -98,7 +98,7 @@ EOL
                 }
             }
         }
-        stage("Deploy to Elastic Beanstalk - Preprod") {
+        stage("Beanstalk - Prod") {
             steps {
                 withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'awsCredentials']]) {
                     script {                   
