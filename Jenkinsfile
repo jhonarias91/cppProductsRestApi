@@ -8,7 +8,7 @@ pipeline {
         AWS_REGION = 'us-east-2'
         BEANSTALK_API_NAME = 'productsApi'
         BEANSTALK_API_PREPROD_ENV = 'productsApi-preprod'
-        BEANSTALK_API_PROD_ENV = 'productsApi-pro5'
+        BEANSTALK_API_PROD_ENV = 'productsapiproduction'
         
     }
     stages {
