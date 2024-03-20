@@ -59,7 +59,7 @@ TEST(RecordAdditionTests, AddValidRecord) {
     double price = 9.9999;
 
     // Act: Attempt to add a record.
-    bool resultAdded = addRecordToCSV(id, name, price);
+    bool resultAdded = insertRecord(id, name, price);
 
     // Assert: Verify the record was added successfully.
     ASSERT_TRUE(resultAdded);
@@ -77,9 +77,11 @@ TEST(RecordAdditionTests, AddValidRecord) {
     ASSERT_TRUE(resultDelete);
 }
 
-TEST(RecordAdditionTests, deleteNotFound) {
-    int id = 99999; //Should not exists
+
+TEST(RecordDeleteTests, deleteNotFound) {
+    int id = 999990; //Should not exists
 
     bool resultDelete = deleteRecord(id);
-    ASSERT_TRUE(resultDelete);
+    ASSERT_FALSE(resultDelete);
 }
+

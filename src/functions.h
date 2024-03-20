@@ -17,7 +17,7 @@ web::json::value getData(int id, const std::map<int, std::pair<std::string, doub
 void handle_get(web::http::http_request request);
 void startHttpServer(int port);
 void handle_post(web::http::http_request request);
-bool addRecordToCSV(int id, const std::string name, double price);
+bool insertRecord(int id, const std::string name, double price);
 void handle_delete(web::http::http_request request);
 bool deleteRecord(int id);
 #endif // FUNCTIONS_H

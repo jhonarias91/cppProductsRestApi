@@ -5,13 +5,13 @@
 #include <sstream>
 #include <string>
 #include <iostream>
-#include <thread> // Necesario para std::this_thread::sleep_for
+#include <thread> // Needed for std::this_thread::sleep_for
 
 using namespace web;
 using namespace web::http;
 using namespace web::http::experimental::listener;
 
-// Variable global atómica para nuestro caso multi hilo
+// Global atomic variable for multiThread 
 std::atomic<bool> serverRunning{true};
 
 std::map<int, std::pair<std::string, double>> loadDataFromCSV(const std::string filename) {
@@ -26,8 +26,7 @@ std::map<int, std::pair<std::string, double>> loadDataFromCSV(const std::string 
         std::istringstream s(line);
         std::getline(s, idStr, ',');
         std::getline(s, name, ',');
-        std::getline(s, priceStr, ',');
-
+        std::getline(s, priceStr, ',');        
         int id = std::stoi(idStr);
         double price = std::stod(priceStr);
 
@@ -47,16 +46,16 @@ json::value getData(int id, std::map<int, std::pair<std::string, double>> data){
         
         response[U("id")] = json::value::number(id);
         response[U("name")] = json::value::string(foundData.first);
-        response[U("price")] = json::value::number(foundData.second);
-        
+        response[U("price")] = json::value::number(foundData.second);        
     }
     return response;
 }
 
 void handle_get(http_request request) {
+
     // Check if the request is for the health check endpoint
     if (request.relative_uri().path() == U("/health")) {
-        // Construct a simple health check response
+        // Simple health check response
         json::value healthResponse;
         healthResponse[U("status")] = json::value::string(U("up"));
         request.reply(status_codes::OK, healthResponse);
@@ -67,6 +66,7 @@ void handle_get(http_request request) {
     try {
         // Parse the query to get the `id`
         auto query = uri::split_query(request.relative_uri().query());
+        
         int id = std::stoi(query[U("id")]);
         auto data = loadDataFromCSV("data.csv");
 
@@ -76,8 +76,7 @@ void handle_get(http_request request) {
         } else {
             request.reply(status_codes::OK, response);
         }
-    } catch (const std::exception& e) {
-        // Handle parsing errors or any other exceptions
+    } catch (const std::exception& e) {       
         json::value errorResponse;
         errorResponse[U("error")] = json::value::string(U("Invalid request"));
         request.reply(status_codes::BadRequest, errorResponse);
@@ -85,25 +84,30 @@ void handle_get(http_request request) {
 }
 
 void handle_post(http_request request) {
-    request.extract_json().then([&](json::value requestBody) {
-        int id = requestBody[U("id")].as_integer();
-        std::string name = requestBody[U("name")].as_string();
-        double price = requestBody[U("price")].as_double();
 
-        if (addRecordToCSV(id, name, price)) {
-            // Success
-            json::value responseMessage;
-            responseMessage[U("message")] = json::value::string(U("Record added successfully"));
-            request.reply(status_codes::OK, responseMessage);
-        } else {
-            // Failure
-            request.reply(status_codes::InternalError, U("Failed to open data file"));
-        }
-    }).wait();
+     if (request.relative_uri().path() == U("/addRecord")) {
+            request.extract_json().then([&](json::value requestBody) {
+                int id = requestBody[U("id")].as_integer();
+                std::string name = requestBody[U("name")].as_string();
+                double price = requestBody[U("price")].as_double();
+
+                if (insertRecord(id, name, price)) {
+                    // Success
+                    json::value responseMessage;
+                    responseMessage[U("message")] = json::value::string(U("Record added successfully"));
+                    request.reply(status_codes::OK, responseMessage);
+                } else {
+                    // Failure
+                    request.reply(status_codes::InternalError, U("Failed to open data file"));
+                }
+            }).wait();
+     }else{
+         request.reply(status_codes::NotFound, U("Path not found"));
+     }
 }
 
 
-bool addRecordToCSV(int id, const std::string name, double price) {
+bool insertRecord(int id, const std::string name, double price) {
     try {
         std::ofstream file("data.csv", std::ios::app); // Open in append mode
         if (!file.is_open()) {
@@ -141,10 +145,15 @@ bool deleteRecord(int id) {
     bool found = false;
 
     // Open the original file
-    std::ifstream fileIn("data.csv");
-    while (getline(fileIn, line)) {
+    std::ifstream dataFileIn("data.csv");
+    //Read the headers and push it back
+    getline(dataFileIn, line);
+    lines.push_back(line);
+
+    while (getline(dataFileIn, line)) {
         std::istringstream s(line);
         std::string idStr;
+        //Get the first element before a ",", that's the id
         getline(s, idStr, ',');
         if (std::stoi(idStr) != id) {
             lines.push_back(line);
@@ -152,7 +161,7 @@ bool deleteRecord(int id) {
             found = true;
         }
     }
-    fileIn.close();
+    dataFileIn.close();
 
     if (!found) {
         return false; // Record not found
