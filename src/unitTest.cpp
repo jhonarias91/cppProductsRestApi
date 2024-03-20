@@ -52,7 +52,7 @@ TEST(GetDataTest, EmptyFile) {
     ASSERT_TRUE(result.is_null()); 
 }
 
-TEST(RecordAdditionTests, AddValidRecord) {
+TEST(AddRecordTests, AddValidRecord) {
     
     int id = 99999;
     std::string name = "Test Product";
@@ -78,7 +78,7 @@ TEST(RecordAdditionTests, AddValidRecord) {
 }
 
 
-TEST(RecordDeleteTests, deleteNotFound) {
+TEST(DeleteRecordTests, deleteNotFound) {
     int id = 999990; //Should not exists
 
     bool resultDelete = deleteRecord(id);
