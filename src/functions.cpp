@@ -85,7 +85,7 @@ void handle_get(http_request request) {
 
 void handle_post(http_request request) {
 
-     if (request.relative_uri().path() == U("/addRecord")) {
+     if (request.relative_uri().path() == U("/insert")) {
             request.extract_json().then([&](json::value requestBody) {
                 int id = requestBody[U("id")].as_integer();
                 std::string name = requestBody[U("name")].as_string();

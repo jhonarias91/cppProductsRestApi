@@ -1,0 +1,1002 @@
+id,name,price
+1,Tableta Electrónica,553.37
+2,Disco Duro Externo,592.07
+3,Laptop,679.36
+4,Teclado Mecánico,842.82
+5,Teléfono Inteligente,812.25
+6,Teléfono Inteligente,859.47
+7,Cámara Digital,1501.01
+8,Placa Base,128.52
+9,Placa Base,1915.73
+10,Procesador,1663.06
+11,Altavoz Portátil,1402.99
+12,Monitor LED,1028.91
+13,Cargador Inalámbrico,1404.16
+14,Placa Base,1610.89
+15,Consola de Videojuegos,1530.38
+16,Monitor LED,473.98
+17,Teclado Mecánico,891.28
+18,Teclado Mecánico,847.87
+19,Caja de Computadora,242.6
+20,Reloj Inteligente,482.26
+21,Audífonos Bluetooth,1439.28
+22,Monitor LED,1785.87
+23,Cámara Digital,1809.11
+24,Procesador,250.24
+25,Procesador,1251.61
+26,Fuente de Poder,1618.08
+27,Reloj Inteligente,1996.24
+28,Cámara Web,950.14
+29,Teclado Mecánico,1148.81
+30,Teléfono Inteligente,1900.44
+31,Teléfono Inteligente,1435.29
+32,Impresora,43.69
+33,Laptop,699.85
+34,Procesador,821.25
+35,Caja de Computadora,677.0
+36,Altavoz Portátil,710.74
+37,Teclado Mecánico,785.65
+38,Tarjeta Gráfica,192.38
+39,Audífonos Bluetooth,1604.08
+40,Cámara Digital,449.95
+41,Altavoz Portátil,99.29
+42,Escáner,526.87
+43,Audífonos Bluetooth,683.89
+44,Memoria USB,72.55
+45,Caja de Computadora,975.85
+46,Teléfono Inteligente,1627.55
+47,Cámara Web,1142.26
+48,Memoria RAM,808.14
+49,Reloj Inteligente,1496.52
+50,Caja de Computadora,298.09
+51,Fuente de Poder,1375.82
+52,Memoria USB,765.95
+53,Reloj Inteligente,1457.28
+54,Router Inalámbrico,384.94
+55,Memoria USB,767.24
+56,Memoria RAM,1535.16
+57,Laptop,954.54
+58,Escáner,207.76
+59,Escáner,645.95
+60,Memoria USB,1235.77
+61,Memoria USB,898.47
+62,Cargador Inalámbrico,49.44
+63,Router Inalámbrico,1285.86
+64,Monitor LED,1901.83
+65,Memoria USB,662.71
+66,Ventilador de PC,1552.37
+67,Placa Base,872.75
+68,Altavoz Portátil,1231.59
+69,Fuente de Poder,281.14
+70,Altavoz Portátil,1206.65
+71,Reloj Inteligente,140.43
+72,Altavoz Portátil,630.43
+73,Monitor LED,1229.27
+74,Tarjeta Gráfica,567.89
+75,Impresora,526.28
+76,Router Inalámbrico,78.11
+77,Fuente de Poder,756.07
+78,Teclado Mecánico,482.2
+79,Escáner,1307.01
+80,Procesador,1913.25
+81,Teléfono Inteligente,262.02
+82,Tarjeta Gráfica,1966.22
+83,Audífonos Bluetooth,419.41
+84,Cámara Digital,859.23
+85,Router Inalámbrico,109.68
+86,Teléfono Inteligente,88.08
+87,Laptop,1205.88
+88,Tarjeta Gráfica,219.88
+89,Teclado Mecánico,1234.34
+90,Teléfono Inteligente,795.36
+91,Tarjeta Gráfica,657.8
+92,Memoria USB,1876.37
+93,Fuente de Poder,405.17
+94,Memoria RAM,1280.63
+95,Ventilador de PC,1760.55
+96,Monitor LED,1756.93
+97,Consola de Videojuegos,301.56
+98,Altavoz Portátil,254.69
+99,Escáner,1398.67
+100,Ventilador de PC,1431.2
+101,Memoria USB,1573.26
+102,Laptop,887.06
+103,Altavoz Portátil,1007.39
+104,Teclado Mecánico,936.85
+105,Reloj Inteligente,1395.92
+106,Ventilador de PC,486.42
+107,Laptop,767.96
+108,Caja de Computadora,1569.64
+109,Laptop,837.17
+110,Caja de Computadora,850.64
+111,Impresora,359.18
+112,Reloj Inteligente,376.64
+113,Tableta Electrónica,216.15
+114,Audífonos Bluetooth,992.2
+115,Placa Base,1221.14
+116,Impresora,935.01
+117,Cargador Inalámbrico,1609.63
+118,Laptop,470.28
+119,Router Inalámbrico,837.75
+120,Fuente de Poder,740.02
+121,Altavoz Portátil,856.68
+122,Router Inalámbrico,1429.76
+123,Fuente de Poder,1131.53
+124,Impresora,213.11
+125,Router Inalámbrico,1677.03
+126,Router Inalámbrico,1297.65
+127,Fuente de Poder,1199.92
+128,Cámara Digital,393.74
+129,Fuente de Poder,1093.49
+130,Disco Duro Externo,1531.38
+131,Cámara Web,709.84
+132,Fuente de Poder,322.8
+133,Escáner,1623.01
+134,Mouse Inalámbrico,1065.98
+135,Altavoz Portátil,1510.81
+136,Placa Base,63.03
+137,Laptop,890.13
+138,Cámara Digital,492.67
+139,Teclado Mecánico,1899.29
+140,Ventilador de PC,1813.77
+141,Tableta Electrónica,69.53
+142,Impresora,809.65
+143,Disco Duro Externo,1330.36
+144,Cargador Inalámbrico,1341.84
+145,Cámara Digital,576.72
+146,Router Inalámbrico,1174.78
+147,Laptop,623.62
+148,Caja de Computadora,1203.9
+149,Teclado Mecánico,663.78
+150,Escáner,1651.24
+151,Tableta Electrónica,1252.56
+152,Reloj Inteligente,1625.99
+153,Tarjeta Gráfica,1313.07
+154,Ventilador de PC,1310.28
+155,Mouse Inalámbrico,1386.08
+156,Tarjeta Gráfica,1241.47
+157,Impresora,954.95
+158,Teléfono Inteligente,1384.11
+159,Router Inalámbrico,752.49
+160,Mouse Inalámbrico,1592.47
+161,Altavoz Portátil,1947.15
+162,Altavoz Portátil,949.16
+163,Teléfono Inteligente,669.4
+164,Fuente de Poder,196.77
+165,Procesador,1448.71
+166,Tableta Electrónica,1095.76
+167,Audífonos Bluetooth,1802.72
+168,Cámara Digital,694.84
+169,Memoria RAM,209.7
+170,Ventilador de PC,463.99
+171,Router Inalámbrico,1799.67
+172,Caja de Computadora,1692.31
+173,Router Inalámbrico,1647.46
+174,Memoria USB,1787.68
+175,Memoria RAM,1771.72
+176,Reloj Inteligente,556.01
+177,Impresora,1563.93
+178,Teclado Mecánico,476.39
+179,Ventilador de PC,1694.9
+180,Router Inalámbrico,1996.26
+181,Router Inalámbrico,1241.27
+182,Mouse Inalámbrico,1482.15
+183,Cámara Web,1374.43
+184,Disco Duro Externo,1995.09
+185,Escáner,1459.61
+186,Laptop,269.74
+187,Disco Duro Externo,899.71
+188,Disco Duro Externo,178.89
+189,Fuente de Poder,50.41
+190,Cámara Web,1519.74
+191,Placa Base,807.83
+192,Consola de Videojuegos,484.65
+193,Altavoz Portátil,735.25
+194,Ventilador de PC,696.09
+195,Monitor LED,558.88
+196,Mouse Inalámbrico,686.38
+197,Reloj Inteligente,357.93
+198,Tableta Electrónica,1774.44
+199,Cámara Web,1537.29
+200,Cargador Inalámbrico,167.29
+201,Placa Base,455.1
+202,Procesador,1108.49
+203,Cargador Inalámbrico,1683.38
+204,Tarjeta Gráfica,784.59
+205,Placa Base,1531.69
+206,Procesador,20.31
+207,Reloj Inteligente,337.43
+208,Tarjeta Gráfica,474.25
+209,Memoria USB,1553.83
+210,Teclado Mecánico,966.0
+211,Cámara Web,226.27
+212,Cámara Web,1602.74
+213,Escáner,640.51
+214,Altavoz Portátil,680.56
+215,Teléfono Inteligente,1296.89
+216,Router Inalámbrico,985.16
+217,Cargador Inalámbrico,549.98
+218,Ventilador de PC,1715.4
+219,Cámara Web,1146.91
+220,Memoria USB,1835.98
+221,Memoria RAM,1376.42
+222,Mouse Inalámbrico,485.85
+223,Escáner,229.5
+224,Tableta Electrónica,823.88
+225,Disco Duro Externo,1734.78
+226,Procesador,94.63
+227,Impresora,1531.68
+228,Router Inalámbrico,1384.29
+229,Cámara Web,583.64
+230,Mouse Inalámbrico,1744.06
+231,Escáner,27.6
+232,Ventilador de PC,670.43
+233,Reloj Inteligente,1368.29
+234,Cámara Digital,1747.85
+235,Laptop,389.09
+236,Tableta Electrónica,1455.45
+237,Impresora,862.73
+238,Placa Base,1701.25
+239,Placa Base,1093.48
+240,Teclado Mecánico,1378.23
+241,Memoria USB,1004.29
+242,Caja de Computadora,303.24
+243,Tarjeta Gráfica,1475.97
+244,Router Inalámbrico,1897.42
+245,Cámara Digital,495.68
+246,Mouse Inalámbrico,1657.04
+247,Teclado Mecánico,1907.51
+248,Ventilador de PC,1943.01
+249,Router Inalámbrico,1810.51
+250,Mouse Inalámbrico,1875.92
+251,Cámara Digital,832.7
+252,Cámara Digital,328.22
+253,Router Inalámbrico,1463.86
+254,Caja de Computadora,72.0
+255,Fuente de Poder,758.32
+256,Memoria USB,1820.87
+257,Escáner,1981.82
+258,Fuente de Poder,1475.51
+259,Cámara Web,1691.67
+260,Tarjeta Gráfica,671.05
+261,Altavoz Portátil,888.73
+262,Memoria USB,436.4
+263,Altavoz Portátil,1728.51
+264,Laptop,923.59
+265,Placa Base,1919.99
+266,Disco Duro Externo,1686.06
+267,Audífonos Bluetooth,316.75
+268,Tableta Electrónica,640.34
+269,Escáner,725.2
+270,Tableta Electrónica,909.29
+271,Altavoz Portátil,1412.47
+272,Teclado Mecánico,1201.91
+273,Escáner,56.37
+274,Impresora,1925.18
+275,Tarjeta Gráfica,421.47
+276,Tableta Electrónica,143.05
+277,Fuente de Poder,1702.59
+278,Caja de Computadora,1151.84
+279,Reloj Inteligente,208.32
+280,Caja de Computadora,738.52
+281,Audífonos Bluetooth,884.95
+282,Caja de Computadora,303.44
+283,Teclado Mecánico,1954.94
+284,Tarjeta Gráfica,1751.01
+285,Teléfono Inteligente,867.82
+286,Ventilador de PC,535.45
+287,Mouse Inalámbrico,811.38
+288,Escáner,1507.68
+289,Audífonos Bluetooth,1937.56
+290,Monitor LED,1219.63
+291,Monitor LED,998.12
+292,Monitor LED,1602.3
+293,Impresora,1165.25
+294,Router Inalámbrico,1908.47
+295,Consola de Videojuegos,1144.89
+296,Monitor LED,506.55
+297,Monitor LED,1843.87
+298,Cargador Inalámbrico,200.14
+299,Reloj Inteligente,232.64
+300,Teclado Mecánico,1597.62
+301,Impresora,969.39
+302,Tarjeta Gráfica,712.0
+303,Disco Duro Externo,1159.62
+304,Disco Duro Externo,253.33
+305,Altavoz Portátil,1129.63
+306,Tarjeta Gráfica,623.71
+307,Teléfono Inteligente,738.45
+308,Disco Duro Externo,360.54
+309,Escáner,1457.41
+310,Cámara Digital,1568.14
+311,Disco Duro Externo,1282.49
+312,Placa Base,1375.96
+313,Memoria USB,579.87
+314,Placa Base,1108.71
+315,Teclado Mecánico,858.99
+316,Memoria USB,185.04
+317,Caja de Computadora,1101.16
+318,Audífonos Bluetooth,31.27
+319,Monitor LED,867.91
+320,Placa Base,725.55
+321,Laptop,1643.84
+322,Cámara Digital,157.25
+323,Tarjeta Gráfica,1541.64
+324,Cargador Inalámbrico,715.91
+325,Tarjeta Gráfica,1659.69
+326,Altavoz Portátil,1254.23
+327,Laptop,1535.99
+328,Fuente de Poder,877.74
+329,Fuente de Poder,457.81
+330,Consola de Videojuegos,44.76
+331,Ventilador de PC,713.26
+332,Consola de Videojuegos,119.77
+333,Disco Duro Externo,1347.42
+334,Memoria USB,1891.04
+335,Monitor LED,1838.6
+336,Teléfono Inteligente,169.85
+337,Caja de Computadora,978.32
+338,Disco Duro Externo,328.31
+339,Laptop,1660.56
+340,Placa Base,1432.91
+341,Consola de Videojuegos,246.62
+342,Cámara Web,54.57
+343,Impresora,749.59
+344,Memoria USB,892.33
+345,Ventilador de PC,1669.93
+346,Cámara Web,395.45
+347,Reloj Inteligente,1563.56
+348,Ventilador de PC,1289.84
+349,Procesador,960.01
+350,Memoria RAM,149.52
+351,Fuente de Poder,1968.66
+352,Ventilador de PC,730.93
+353,Audífonos Bluetooth,981.77
+354,Teléfono Inteligente,1906.31
+355,Monitor LED,709.72
+356,Tableta Electrónica,1732.77
+357,Monitor LED,1177.16
+358,Tableta Electrónica,726.91
+359,Tableta Electrónica,41.79
+360,Memoria USB,1140.5
+361,Laptop,1959.36
+362,Mouse Inalámbrico,524.18
+363,Impresora,119.3
+364,Procesador,950.56
+365,Ventilador de PC,744.8
+366,Teclado Mecánico,1403.18
+367,Tableta Electrónica,881.72
+368,Mouse Inalámbrico,427.01
+369,Escáner,757.48
+370,Teclado Mecánico,1243.09
+371,Ventilador de PC,359.95
+372,Altavoz Portátil,1142.16
+373,Router Inalámbrico,1599.63
+374,Teléfono Inteligente,100.62
+375,Tarjeta Gráfica,1908.76
+376,Teclado Mecánico,61.16
+377,Disco Duro Externo,1422.02
+378,Teléfono Inteligente,1196.01
+379,Tableta Electrónica,49.46
+380,Reloj Inteligente,1376.62
+381,Disco Duro Externo,1831.66
+382,Cámara Web,1687.64
+383,Consola de Videojuegos,1744.2
+384,Laptop,1041.26
+385,Memoria RAM,639.06
+386,Router Inalámbrico,1943.01
+387,Consola de Videojuegos,440.51
+388,Fuente de Poder,496.41
+389,Procesador,618.78
+390,Cargador Inalámbrico,49.59
+391,Audífonos Bluetooth,655.23
+392,Cargador Inalámbrico,855.76
+393,Impresora,1033.62
+394,Teclado Mecánico,1349.73
+395,Caja de Computadora,1494.79
+396,Impresora,1929.47
+397,Consola de Videojuegos,179.97
+398,Escáner,1352.44
+399,Teclado Mecánico,1224.75
+400,Teclado Mecánico,149.79
+401,Mouse Inalámbrico,1517.6
+402,Altavoz Portátil,1642.04
+403,Tableta Electrónica,1592.72
+404,Consola de Videojuegos,1331.54
+405,Fuente de Poder,1403.46
+406,Memoria USB,979.05
+407,Fuente de Poder,1038.06
+408,Router Inalámbrico,1280.32
+409,Mouse Inalámbrico,1174.42
+410,Audífonos Bluetooth,1380.52
+411,Memoria USB,450.79
+412,Tableta Electrónica,669.76
+413,Altavoz Portátil,1747.22
+414,Monitor LED,1607.93
+415,Audífonos Bluetooth,332.24
+416,Escáner,316.06
+417,Tableta Electrónica,585.76
+418,Teléfono Inteligente,391.02
+419,Ventilador de PC,893.93
+420,Monitor LED,702.78
+421,Procesador,1622.58
+422,Caja de Computadora,153.29
+423,Reloj Inteligente,628.65
+424,Audífonos Bluetooth,60.3
+425,Memoria USB,1982.77
+426,Monitor LED,631.45
+427,Consola de Videojuegos,1964.9
+428,Caja de Computadora,1177.38
+429,Procesador,949.79
+430,Placa Base,1261.57
+431,Cámara Digital,1734.3
+432,Memoria RAM,576.75
+433,Laptop,881.7
+434,Procesador,264.84
+435,Cámara Digital,636.48
+436,Laptop,1388.59
+437,Disco Duro Externo,1896.46
+438,Tarjeta Gráfica,194.63
+439,Memoria USB,1246.72
+440,Mouse Inalámbrico,660.7
+441,Disco Duro Externo,1957.17
+442,Impresora,434.82
+443,Procesador,1572.97
+444,Laptop,711.31
+445,Cargador Inalámbrico,793.75
+446,Tableta Electrónica,1476.45
+447,Impresora,928.43
+448,Procesador,368.46
+449,Escáner,1193.59
+450,Fuente de Poder,1790.58
+451,Tarjeta Gráfica,768.98
+452,Cargador Inalámbrico,554.54
+453,Teclado Mecánico,104.08
+454,Teclado Mecánico,1102.0
+455,Laptop,1753.75
+456,Monitor LED,1649.09
+457,Mouse Inalámbrico,66.46
+458,Audífonos Bluetooth,601.54
+459,Tarjeta Gráfica,611.74
+460,Fuente de Poder,1021.94
+461,Mouse Inalámbrico,1338.02
+462,Cámara Digital,1673.58
+463,Placa Base,1145.11
+464,Cámara Web,1475.61
+465,Cámara Digital,1487.5
+466,Procesador,1342.06
+467,Reloj Inteligente,1937.4
+468,Teclado Mecánico,414.11
+469,Router Inalámbrico,1494.28
+470,Laptop,439.05
+471,Memoria USB,1827.66
+472,Consola de Videojuegos,465.38
+473,Memoria USB,1209.82
+474,Consola de Videojuegos,1151.84
+475,Placa Base,81.45
+476,Placa Base,1067.99
+477,Reloj Inteligente,470.32
+478,Placa Base,1556.82
+479,Tableta Electrónica,933.35
+480,Cámara Digital,472.46
+481,Mouse Inalámbrico,765.36
+482,Caja de Computadora,464.61
+483,Consola de Videojuegos,183.68
+484,Consola de Videojuegos,1932.03
+485,Caja de Computadora,1613.34
+486,Placa Base,414.09
+487,Teclado Mecánico,275.51
+488,Disco Duro Externo,816.35
+489,Cámara Web,1844.97
+490,Router Inalámbrico,1709.19
+491,Impresora,1172.47
+492,Teclado Mecánico,1514.21
+493,Altavoz Portátil,483.15
+494,Memoria RAM,1309.51
+495,Consola de Videojuegos,1617.27
+496,Memoria USB,384.9
+497,Router Inalámbrico,1412.47
+498,Cámara Web,647.01
+499,Cargador Inalámbrico,1564.99
+500,Memoria RAM,1729.31
+501,Monitor LED,921.01
+502,Monitor LED,553.49
+503,Altavoz Portátil,505.83
+504,Memoria USB,890.12
+505,Mouse Inalámbrico,804.17
+506,Tarjeta Gráfica,659.17
+507,Memoria RAM,138.74
+508,Teclado Mecánico,1488.27
+509,Teléfono Inteligente,146.46
+510,Teclado Mecánico,1648.9
+511,Cargador Inalámbrico,397.73
+512,Placa Base,1448.84
+513,Monitor LED,1960.98
+514,Procesador,755.05
+515,Fuente de Poder,586.34
+516,Disco Duro Externo,499.94
+517,Disco Duro Externo,1525.31
+518,Caja de Computadora,1379.05
+519,Cámara Digital,1279.96
+520,Tableta Electrónica,714.65
+521,Router Inalámbrico,559.79
+522,Memoria USB,1148.94
+523,Memoria USB,663.96
+524,Cargador Inalámbrico,1763.97
+525,Impresora,979.97
+526,Cámara Digital,700.5
+527,Tableta Electrónica,1568.8
+528,Impresora,1445.44
+529,Teléfono Inteligente,1219.25
+530,Disco Duro Externo,1006.13
+531,Tableta Electrónica,577.11
+532,Altavoz Portátil,118.23
+533,Placa Base,1849.33
+534,Cámara Digital,116.75
+535,Mouse Inalámbrico,743.76
+536,Cargador Inalámbrico,1169.87
+537,Procesador,818.92
+538,Reloj Inteligente,934.39
+539,Cargador Inalámbrico,1139.21
+540,Consola de Videojuegos,198.72
+541,Laptop,883.28
+542,Caja de Computadora,386.1
+543,Audífonos Bluetooth,1267.2
+544,Reloj Inteligente,404.33
+545,Cargador Inalámbrico,1761.68
+546,Escáner,1591.39
+547,Procesador,238.89
+548,Fuente de Poder,1027.72
+549,Monitor LED,510.97
+550,Fuente de Poder,1561.03
+551,Ventilador de PC,1891.05
+552,Fuente de Poder,1038.95
+553,Disco Duro Externo,1302.88
+554,Cargador Inalámbrico,997.91
+555,Teléfono Inteligente,936.27
+556,Escáner,1111.71
+557,Cargador Inalámbrico,1492.83
+558,Teclado Mecánico,1577.08
+559,Tableta Electrónica,1976.9
+560,Ventilador de PC,170.4
+561,Teléfono Inteligente,493.6
+562,Memoria USB,1470.66
+563,Teléfono Inteligente,1015.82
+564,Audífonos Bluetooth,501.81
+565,Mouse Inalámbrico,1866.14
+566,Cargador Inalámbrico,1372.26
+567,Fuente de Poder,1109.0
+568,Cámara Web,520.9
+569,Reloj Inteligente,1138.42
+570,Procesador,532.45
+571,Memoria USB,534.68
+572,Placa Base,800.98
+573,Consola de Videojuegos,1660.49
+574,Impresora,1565.94
+575,Disco Duro Externo,738.69
+576,Placa Base,86.12
+577,Cargador Inalámbrico,433.48
+578,Tarjeta Gráfica,1176.67
+579,Tarjeta Gráfica,601.65
+580,Cámara Digital,992.8
+581,Altavoz Portátil,1801.99
+582,Caja de Computadora,825.5
+583,Escáner,1971.97
+584,Memoria USB,1269.25
+585,Consola de Videojuegos,653.33
+586,Cámara Web,750.42
+587,Procesador,114.21
+588,Cámara Digital,1007.39
+589,Memoria USB,327.74
+590,Altavoz Portátil,1435.51
+591,Altavoz Portátil,917.02
+592,Caja de Computadora,161.24
+593,Escáner,1894.34
+594,Laptop,646.48
+595,Consola de Videojuegos,1092.11
+596,Memoria USB,1059.85
+597,Tableta Electrónica,976.87
+598,Memoria USB,1926.92
+599,Cargador Inalámbrico,796.49
+600,Escáner,646.35
+601,Teclado Mecánico,574.9
+602,Procesador,1183.77
+603,Teléfono Inteligente,1044.53
+604,Placa Base,294.36
+605,Memoria USB,1863.61
+606,Altavoz Portátil,1906.07
+607,Tableta Electrónica,1071.33
+608,Mouse Inalámbrico,1153.5
+609,Altavoz Portátil,487.91
+610,Memoria RAM,163.66
+611,Mouse Inalámbrico,953.65
+612,Cámara Web,1785.78
+613,Impresora,1847.91
+614,Placa Base,488.53
+615,Cargador Inalámbrico,793.07
+616,Altavoz Portátil,766.55
+617,Caja de Computadora,1847.38
+618,Memoria RAM,1045.63
+619,Cámara Web,1949.84
+620,Reloj Inteligente,663.13
+621,Cámara Web,1605.07
+622,Altavoz Portátil,440.43
+623,Reloj Inteligente,1268.05
+624,Memoria USB,1964.38
+625,Impresora,687.47
+626,Cargador Inalámbrico,515.07
+627,Teclado Mecánico,1251.34
+628,Fuente de Poder,1644.32
+629,Placa Base,1309.04
+630,Consola de Videojuegos,1521.95
+631,Impresora,1290.86
+632,Reloj Inteligente,1520.5
+633,Disco Duro Externo,1116.86
+634,Disco Duro Externo,564.76
+635,Tarjeta Gráfica,1136.19
+636,Impresora,1808.71
+637,Procesador,1294.81
+638,Ventilador de PC,1876.39
+639,Laptop,1964.75
+640,Placa Base,1569.82
+641,Audífonos Bluetooth,884.16
+642,Altavoz Portátil,1984.93
+643,Disco Duro Externo,1875.33
+644,Procesador,838.71
+645,Altavoz Portátil,1901.1
+646,Router Inalámbrico,1240.66
+647,Audífonos Bluetooth,1569.47
+648,Disco Duro Externo,1075.16
+649,Impresora,1535.33
+650,Disco Duro Externo,180.36
+651,Memoria RAM,981.44
+652,Teclado Mecánico,1420.84
+653,Placa Base,1355.7
+654,Tableta Electrónica,1242.75
+655,Memoria RAM,1857.37
+656,Disco Duro Externo,297.65
+657,Audífonos Bluetooth,488.26
+658,Caja de Computadora,1291.7
+659,Cámara Digital,1549.2
+660,Router Inalámbrico,1520.55
+661,Cámara Web,1006.86
+662,Altavoz Portátil,898.76
+663,Audífonos Bluetooth,268.12
+664,Router Inalámbrico,1171.72
+665,Laptop,1316.88
+666,Fuente de Poder,473.39
+667,Cargador Inalámbrico,1661.8
+668,Cámara Digital,994.95
+669,Cargador Inalámbrico,1620.56
+670,Caja de Computadora,1945.01
+671,Procesador,1404.42
+672,Consola de Videojuegos,1184.89
+673,Impresora,1959.12
+674,Fuente de Poder,1885.53
+675,Teclado Mecánico,1635.82
+676,Consola de Videojuegos,355.47
+677,Caja de Computadora,926.93
+678,Laptop,1392.2
+679,Cámara Web,669.44
+680,Laptop,1079.51
+681,Teclado Mecánico,594.71
+682,Memoria RAM,1870.2
+683,Procesador,1229.42
+684,Cámara Web,195.67
+685,Escáner,294.82
+686,Mouse Inalámbrico,1464.5
+687,Tableta Electrónica,1541.09
+688,Cargador Inalámbrico,877.08
+689,Fuente de Poder,950.93
+690,Fuente de Poder,1708.26
+691,Tarjeta Gráfica,1891.9
+692,Procesador,1419.16
+693,Ventilador de PC,644.79
+694,Placa Base,274.74
+695,Audífonos Bluetooth,29.46
+696,Caja de Computadora,244.84
+697,Laptop,22.95
+698,Cargador Inalámbrico,1820.08
+699,Reloj Inteligente,403.69
+700,Tarjeta Gráfica,1755.33
+701,Consola de Videojuegos,1860.87
+702,Cámara Digital,1967.22
+703,Cámara Web,599.11
+704,Procesador,732.85
+705,Impresora,664.61
+706,Audífonos Bluetooth,624.99
+707,Memoria RAM,1532.81
+708,Caja de Computadora,1148.11
+709,Consola de Videojuegos,785.26
+710,Ventilador de PC,538.75
+711,Teclado Mecánico,1200.82
+712,Procesador,1608.89
+713,Tableta Electrónica,1600.24
+714,Placa Base,586.24
+715,Procesador,1634.97
+716,Impresora,1788.23
+717,Router Inalámbrico,782.97
+718,Fuente de Poder,135.43
+719,Consola de Videojuegos,1148.08
+720,Audífonos Bluetooth,1582.12
+721,Tarjeta Gráfica,29.08
+722,Procesador,1919.22
+723,Monitor LED,1304.98
+724,Placa Base,785.02
+725,Cargador Inalámbrico,712.47
+726,Laptop,1041.62
+727,Altavoz Portátil,726.81
+728,Reloj Inteligente,1452.6
+729,Fuente de Poder,782.69
+730,Fuente de Poder,816.74
+731,Reloj Inteligente,858.18
+732,Mouse Inalámbrico,1129.35
+733,Ventilador de PC,1159.86
+734,Placa Base,1983.77
+735,Fuente de Poder,1101.24
+736,Cargador Inalámbrico,501.83
+737,Teléfono Inteligente,1916.51
+738,Memoria RAM,377.44
+739,Placa Base,1375.27
+740,Memoria RAM,1507.94
+741,Escáner,474.24
+742,Cámara Web,621.12
+743,Disco Duro Externo,1897.07
+744,Cámara Web,1034.7
+745,Procesador,146.56
+746,Procesador,1756.89
+747,Cámara Web,425.35
+748,Impresora,482.46
+749,Reloj Inteligente,1771.37
+750,Impresora,1405.87
+751,Fuente de Poder,1591.9
+752,Escáner,1965.05
+753,Memoria USB,276.59
+754,Memoria RAM,914.82
+755,Teclado Mecánico,1350.81
+756,Cargador Inalámbrico,968.6
+757,Memoria USB,1070.08
+758,Reloj Inteligente,1765.97
+759,Placa Base,1757.22
+760,Impresora,1918.76
+761,Consola de Videojuegos,296.82
+762,Escáner,625.56
+763,Escáner,427.41
+764,Procesador,136.45
+765,Laptop,1126.21
+766,Ventilador de PC,87.29
+767,Altavoz Portátil,948.47
+768,Tableta Electrónica,1362.1
+769,Audífonos Bluetooth,1883.04
+770,Altavoz Portátil,1070.06
+771,Teclado Mecánico,266.92
+772,Monitor LED,331.35
+773,Reloj Inteligente,562.19
+774,Altavoz Portátil,175.34
+775,Cámara Web,1423.56
+776,Reloj Inteligente,521.26
+777,Laptop,1600.19
+778,Disco Duro Externo,739.98
+779,Router Inalámbrico,1354.51
+780,Caja de Computadora,284.66
+781,Caja de Computadora,857.39
+782,Mouse Inalámbrico,462.23
+783,Impresora,250.08
+784,Audífonos Bluetooth,1379.28
+785,Tarjeta Gráfica,732.63
+786,Monitor LED,656.32
+787,Cámara Digital,223.47
+788,Disco Duro Externo,352.49
+789,Memoria USB,497.05
+790,Caja de Computadora,1556.34
+791,Laptop,524.67
+792,Memoria USB,1949.42
+793,Escáner,1836.34
+794,Cargador Inalámbrico,1962.01
+795,Cámara Web,1567.6
+796,Caja de Computadora,737.41
+797,Escáner,818.15
+798,Memoria RAM,203.34
+799,Consola de Videojuegos,1346.74
+800,Laptop,915.81
+801,Monitor LED,1164.55
+802,Monitor LED,1659.96
+803,Router Inalámbrico,709.38
+804,Escáner,1709.89
+805,Cámara Web,1162.07
+806,Placa Base,1449.27
+807,Memoria USB,297.73
+808,Disco Duro Externo,918.37
+809,Memoria USB,69.22
+810,Teclado Mecánico,1923.79
+811,Mouse Inalámbrico,1116.6
+812,Cargador Inalámbrico,135.26
+813,Consola de Videojuegos,1931.11
+814,Teclado Mecánico,1030.06
+815,Router Inalámbrico,1211.71
+816,Cámara Web,1672.41
+817,Altavoz Portátil,1980.06
+818,Fuente de Poder,588.74
+819,Tarjeta Gráfica,301.3
+820,Memoria USB,1777.66
+821,Altavoz Portátil,105.96
+822,Teléfono Inteligente,1735.45
+823,Memoria RAM,40.15
+824,Teléfono Inteligente,1133.46
+825,Fuente de Poder,68.97
+826,Consola de Videojuegos,870.21
+827,Placa Base,1550.78
+828,Mouse Inalámbrico,450.22
+829,Monitor LED,1429.79
+830,Router Inalámbrico,1378.21
+831,Monitor LED,1441.06
+832,Monitor LED,841.9
+833,Disco Duro Externo,823.39
+834,Monitor LED,1539.34
+835,Tarjeta Gráfica,678.89
+836,Laptop,705.1
+837,Cámara Web,326.87
+838,Tableta Electrónica,1380.26
+839,Fuente de Poder,78.85
+840,Cargador Inalámbrico,1019.03
+841,Router Inalámbrico,202.24
+842,Procesador,766.27
+843,Ventilador de PC,958.88
+844,Audífonos Bluetooth,670.93
+845,Reloj Inteligente,149.7
+846,Cámara Digital,875.03
+847,Cámara Digital,416.84
+848,Fuente de Poder,257.89
+849,Cámara Digital,794.85
+850,Router Inalámbrico,369.28
+851,Disco Duro Externo,736.49
+852,Placa Base,985.88
+853,Procesador,1084.32
+854,Consola de Videojuegos,1887.79
+855,Placa Base,638.29
+856,Cámara Digital,870.13
+857,Disco Duro Externo,1349.92
+858,Tableta Electrónica,1010.41
+859,Teléfono Inteligente,1615.8
+860,Memoria USB,416.66
+861,Tableta Electrónica,657.64
+862,Memoria USB,473.68
+863,Monitor LED,1682.61
+864,Cámara Web,594.46
+865,Laptop,1394.68
+866,Laptop,1395.56
+867,Memoria RAM,1173.58
+868,Cámara Digital,1727.34
+869,Impresora,385.15
+870,Cargador Inalámbrico,891.66
+871,Escáner,833.24
+872,Escáner,1722.26
+873,Caja de Computadora,563.78
+874,Procesador,448.57
+875,Tarjeta Gráfica,1484.2
+876,Reloj Inteligente,521.12
+877,Memoria USB,195.21
+878,Disco Duro Externo,1340.0
+879,Cargador Inalámbrico,811.42
+880,Cámara Web,434.15
+881,Laptop,81.09
+882,Router Inalámbrico,1280.82
+883,Reloj Inteligente,551.78
+884,Cargador Inalámbrico,487.59
+885,Teclado Mecánico,1500.12
+886,Consola de Videojuegos,1294.31
+887,Mouse Inalámbrico,1583.15
+888,Router Inalámbrico,1693.03
+889,Altavoz Portátil,940.66
+890,Ventilador de PC,148.48
+891,Fuente de Poder,963.22
+892,Ventilador de PC,1519.73
+893,Cargador Inalámbrico,986.28
+894,Teclado Mecánico,1258.12
+895,Cámara Web,1136.97
+896,Procesador,838.75
+897,Mouse Inalámbrico,486.56
+898,Caja de Computadora,1204.2
+899,Reloj Inteligente,480.2
+900,Memoria RAM,1490.86
+901,Cámara Web,916.8
+902,Altavoz Portátil,216.35
+903,Cámara Digital,744.82
+904,Escáner,545.38
+905,Consola de Videojuegos,1772.18
+906,Tableta Electrónica,908.1
+907,Placa Base,995.61
+908,Escáner,1533.03
+909,Procesador,1858.6
+910,Altavoz Portátil,524.99
+911,Fuente de Poder,89.87
+912,Reloj Inteligente,1157.77
+913,Altavoz Portátil,1806.6
+914,Fuente de Poder,1433.39
+915,Cargador Inalámbrico,1332.9
+916,Escáner,1535.74
+917,Router Inalámbrico,1440.11
+918,Cámara Digital,385.55
+919,Caja de Computadora,1514.75
+920,Tableta Electrónica,1249.77
+921,Ventilador de PC,891.31
+922,Cámara Web,1516.99
+923,Teléfono Inteligente,1862.08
+924,Cámara Digital,1444.71
+925,Cargador Inalámbrico,1198.72
+926,Memoria RAM,1616.05
+927,Memoria RAM,606.63
+928,Placa Base,113.97
+929,Disco Duro Externo,825.25
+930,Mouse Inalámbrico,1863.02
+931,Cámara Web,1763.07
+932,Cámara Web,262.85
+933,Audífonos Bluetooth,579.87
+934,Tableta Electrónica,833.08
+935,Placa Base,1511.1
+936,Impresora,1648.44
+937,Teclado Mecánico,1010.71
+938,Router Inalámbrico,1159.06
+939,Memoria RAM,1193.37
+940,Teléfono Inteligente,1546.23
+941,Placa Base,852.13
+942,Cargador Inalámbrico,813.21
+943,Laptop,497.68
+944,Consola de Videojuegos,619.0
+945,Router Inalámbrico,1653.94
+946,Escáner,1603.08
+947,Procesador,1590.55
+948,Cámara Web,55.55
+949,Cargador Inalámbrico,1169.64
+950,Cámara Digital,1687.84
+951,Cargador Inalámbrico,935.6
+952,Tableta Electrónica,1110.69
+953,Consola de Videojuegos,235.33
+954,Cámara Digital,296.04
+955,Audífonos Bluetooth,973.94
+956,Teléfono Inteligente,524.64
+957,Disco Duro Externo,1820.76
+958,Placa Base,649.53
+959,Procesador,1438.36
+960,Laptop,799.47
+961,Consola de Videojuegos,1095.48
+962,Monitor LED,1140.8
+963,Cámara Web,1936.46
+964,Altavoz Portátil,363.85
+965,Mouse Inalámbrico,385.94
+966,Router Inalámbrico,1629.32
+967,Consola de Videojuegos,1623.51
+968,Reloj Inteligente,522.49
+969,Cargador Inalámbrico,799.96
+970,Altavoz Portátil,948.84
+971,Ventilador de PC,276.39
+972,Teclado Mecánico,1775.64
+973,Ventilador de PC,450.49
+974,Caja de Computadora,1634.95
+975,Memoria RAM,1106.28
+976,Escáner,1157.71
+977,Router Inalámbrico,1856.59
+978,Altavoz Portátil,314.62
+979,Consola de Videojuegos,359.01
+980,Placa Base,831.56
+981,Cargador Inalámbrico,1920.91
+982,Escáner,89.76
+983,Cámara Digital,93.05
+984,Disco Duro Externo,1015.82
+985,Laptop,1339.31
+986,Monitor LED,1767.45
+987,Monitor LED,397.96
+988,Consola de Videojuegos,783.16
+989,Disco Duro Externo,163.69
+990,Teléfono Inteligente,1017.81
+991,Teclado Mecánico,240.68
+992,Reloj Inteligente,1662.3
+993,Tarjeta Gráfica,831.22
+994,Cámara Digital,143.39
+995,Procesador,777.35
+996,Tableta Electrónica,1816.76
+997,Router Inalámbrico,1447.47
+998,Router Inalámbrico,1426.99
+999,Router Inalámbrico,673.18
+1000,Cámara Web,1920.01
+1001,Cámara Web FHD,2001.05

@@ -1,5 +1,8 @@
 .vscode
 productsapp
+runUnitTest
+runIntegrationTest
 
 src/runUnitTest
+src/runIntegrationTest
 src/productsapp

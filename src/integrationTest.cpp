@@ -89,7 +89,7 @@ TEST(PostTest, TestAddRecordOk) {
     ASSERT_TRUE(waitForServerReady(U("http://localhost:4303"), 5)); // Espera 5 segundos a que el servidor esté listo
 
     http::client::http_client client(U("http://localhost:4303"));
-    uri_builder builder(U("/addRecord")); 
+    uri_builder builder(U("/insert")); 
 
     json::value requestBody;
     requestBody[U("id")] = json::value::number(777777);

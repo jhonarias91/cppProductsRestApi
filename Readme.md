@@ -25,9 +25,9 @@
 
 - *Compilar el programa*
 
-En la carpeta src:
+Ubicarse en el root del proyecto:
     
-```g++ -std=c++11 -o productsapp  main.cpp functions.cpp -lcpprest -lboost_system -lssl -lcrypto```
+```g++ -std=c++11 -o productsapp ./src/main.cpp ./src/functions.cpp -lcpprest -lboost_system -lssl -lcrypto```
 
 - std=c++11: Especifica el estándar de C++ a usar, necesario para algunas características de C++ usadas con libcpprest.
       main.cpp: El nombre del source.cpp
@@ -40,19 +40,44 @@ En la carpeta src:
 - *Ejecutarlo* 
     ```./productsapp```
 
-- *Consumirlo*
+- *Consumirlo Local*
     ```curl "http://localhost:4300/health"```
-    - local: ```curl "http://localhost:4300?id=200"```
+    ```curl "http://localhost:4300?id=200"```
     
  #### *End-points:* 
 
+- _*Get*_
+
+    - http://localhost:4300?id={productId}
+    
+     
+    Obtiene el producto por su {productId}
+
+    
+    -  http://localhost:4300/health
+
+    Healt: verifica ele stado actual del servidor
+
  - _*Delete*_
 
-    http://localhost:4300/delete/{productId}
+    - http://localhost:4300/delete/{productId}
+    
+     Elimina un producto por su {productId}
+
   
+- _*Post*_
 
+    - http://localhost:4300/insert
+    
+        Inserta un nuevo producto
 
+    {
+        "id": int,
+        "name": String,
+        "price": float
+    }
 
+    
 ### Testing
 
 - Bajar el paquete de  gtest  
@@ -63,14 +88,14 @@ En la carpeta src:
 
 - Compilar las unitTest
 
-    ```g++ -std=c++11 -o runUnitTest unitTest.cpp functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto```
+    ```g++ -std=c++11 -o runUnitTest ./src/unitTest.cpp ./src/functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto```
 
 - Ejecutar las unitTest 
  ```./runUnitTest```
 
 - Compilar las integration test
 
-    ```g++ -std=c++11 -o runIntegrationTest integrationTest.cpp functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto```
+    ```g++ -std=c++11 -o runIntegrationTest ./src/integrationTest.cpp ./src/functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto```
 
 - Ejecutar las integraTiontest 
  ```./runIntegrationTest```
