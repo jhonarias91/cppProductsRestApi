@@ -41,8 +41,18 @@ En la carpeta src:
     ```./productsapp```
 
 - *Consumirlo*
+    ```curl "http://localhost:5000/health"```
     - local: ```curl "http://localhost:5000?id=200"```
     
+ #### *End-points:* 
+
+ - _*Delete*_
+
+    http://localhost:5000/delete/{productId}
+  
+
+
+
 ### Testing
 
 - Bajar el paquete de  gtest  
@@ -57,6 +67,13 @@ En la carpeta src:
 
 - Ejecutar las unitTest 
  ```./runUnitTest```
+
+- Compilar las integration test
+
+    ```g++ -std=c++11 -o runIntegrationTest integrationTest.cpp functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto```
+
+- Ejecutar las integraTiontest 
+ ```./runIntegrationTest```
 
 ### Jenkis en EC2
 
