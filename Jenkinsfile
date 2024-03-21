@@ -33,7 +33,8 @@ pipeline {
                 always {
                      junit 'unittestresults.xml'
                 }
-            }  
+            } 
+        }
         stage("IntegrationTest")  {
         steps {
                 sh "g++ -std=c++11 -o runIntegrationTest ./src/integrationTest.cpp ./src/functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto"
@@ -41,14 +42,9 @@ pipeline {
             }
             post{
                 always {
-                     junit 'unittestresults.xml'
+                     junit 'integrationtestresults.xml'
                 }
             }  
-        }
-        stage('Publish Integration Test Results') {
-            steps {
-                junit 'integrationtestresults.xml'
-            }
         }
         stage("Dockerize") {
             steps {
