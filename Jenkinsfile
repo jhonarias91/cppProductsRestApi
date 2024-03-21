@@ -26,14 +26,14 @@ pipeline {
         }  
         stage("UnitTest")  {
             steps {
-                    sh "g++ -std=c++11 -o runUnitTest ./src/unitTest.cpp ./src/functions.cpp  --gtest_output=\"xml:unittestresults.xml\" -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto"
-                    sh "./runUnitTest"
+                    sh "g++ -std=c++11 -o runUnitTest ./src/unitTest.cpp ./src/functions.cpp  -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto"
+                    sh "./runUnitTest --gtest_output=\'xml:unittestresults.xml\' "
                 }
             }  
         stage("IntegrationTest")  {
         steps {
-                sh "g++ -std=c++11 -o runIntegrationTest ./src/integrationTest.cpp ./src/functions.cpp --gtest_output=\"xml:integrationtestresults.xml\" -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto"
-                sh "./runIntegrationTest"
+                sh "g++ -std=c++11 -o runIntegrationTest ./src/integrationTest.cpp ./src/functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto"
+                sh "./runIntegrationTest  --gtest_output=\'xml:integrationtestresults.xml\' "
             }
         }
         stage('Publish Unit Test Results') {
