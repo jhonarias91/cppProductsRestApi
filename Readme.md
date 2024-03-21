@@ -161,6 +161,8 @@ Update your local package index, then finally install Jenkins:
  - test webhook
  - Instalar AWS CLI en el Agente de Jenkins (EC2) para poder correr comandos de aws.
     ```sudo apt-get install awscli```
+- Instalar el plugin de Github
+- Instalar el plugin JUnit para reprotes de pruebas.
 
 #### Crear repository en dockerhub
 
