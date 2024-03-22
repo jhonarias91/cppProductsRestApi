@@ -122,6 +122,24 @@ EOL
                 }
             }
         }
-
+        stage("Verify Deployment") {
+        steps {
+            script {                
+                int retries = 5
+                while (true) {
+                    def response = sh(script: "curl --silent 'http://productsapiproduction.eba-ijpjgjya.us-east-2.elasticbeanstalk.com/health'", returnStdout: true).trim()
+                    def health = readJSON text: response
+                    if (health.version == "${BUILD_NUMBER}") {
+                        echo "Verified deployment of version ${BUILD_NUMBER}"
+                        break
+                    }
+                    if (retries-- == 0) {
+                        error "Version ${BUILD_NUMBER} not found after multiple retries"
+                    }
+                    sleep 10 // Espera 10 segundos antes de reintentar
+                }
+            }
+            }
+        }
     }
 }

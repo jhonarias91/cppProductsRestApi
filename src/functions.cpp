@@ -55,7 +55,7 @@ void handle_get(http_request request) {
 
     // Check if the request is for the health check endpoint
     if (request.relative_uri().path() == U("/health")) {
-        std::string version = std::getenv("APP_VERSION") ? std::getenv("APP_VERSION") : "unknown";
+        std::string version = std::getenv("APP_VERSION") ? std::getenv("APP_VERSION") : "locV0.0.1";
 
         // Simple health check response
         json::value healthResponse;
