@@ -124,7 +124,7 @@ EOL
         }
         stage("Verify Deployment") {
             when {
-                expression { true } // Disabled stage
+                expression { false } // Disabled stage
             }
             steps {
                 script {                
@@ -143,7 +143,7 @@ EOL
                             }
                         } catch (Exception e) {
                             // Maneja el caso en que curl falla porque el servidor no responde
-                            echo "The server di not respond or an error: ${e.getMessage()}"
+                            echo "The server did not respond or an error ocurred: ${e.getMessage()}"
                         }
 
                         if (retries-- == 0) {
