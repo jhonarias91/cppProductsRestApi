@@ -128,7 +128,7 @@ EOL
         }
         steps {
             script {                
-                int retries = 5
+                int retries = 15
                 while (true) {
                     def response = sh(script: "curl --silent 'http://productsapiproduction.eba-ijpjgjya.us-east-2.elasticbeanstalk.com/health'", returnStdout: true).trim()
                     def health = readJSON text: response
