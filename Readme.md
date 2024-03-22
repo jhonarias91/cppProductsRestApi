@@ -163,6 +163,7 @@ Update your local package index, then finally install Jenkins:
     ```sudo apt-get install awscli```
 - Instalar el plugin de Github
 - Instalar el plugin JUnit para reprotes de pruebas.
+- Instalar el plugin Pipeline Utility Steps para usar readJSON
 
 #### Crear repository en dockerhub
 

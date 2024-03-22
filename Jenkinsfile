@@ -123,6 +123,9 @@ EOL
             }
         }
         stage("Verify Deployment") {
+        when {
+            expression { true } // Disabled stage
+        }
         steps {
             script {                
                 int retries = 5
