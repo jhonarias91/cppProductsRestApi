@@ -126,33 +126,33 @@ EOL
             when {
                 expression { true } // Disabled stage
             }
-          steps {
-            script {                
-                int retries = 15
-                while (true) {
-                    try {
-                        // Intenta obtener la respuesta del servidor
-                        def response = sh(script: "curl --silent --fail 'http://productsapiproduction.eba-ijpjgjya.us-east-2.elasticbeanstalk.com/health'", returnStdout: true).trim()
-                        def health = readJSON text: response
-                        echo response
-                        if (health.version == "${BUILD_NUMBER}") {
-                            echo "Verified deployment of version ${BUILD_NUMBER}"
-                            break // Sale del bucle si la versión coincide
-                        } else {
-                            echo "La versión actual ${health.version} no coincide con ${BUILD_NUMBER}"
+            steps {
+                script {                
+                    int retries = 10
+                    while (true) {
+                        try {
+                            // Intenta obtener la respuesta del servidor
+                            def response = sh(script: "curl --silent --fail 'http://productsapiproduction.eba-ijpjgjya.us-east-2.elasticbeanstalk.com/health'", returnStdout: true).trim()
+                            def health = readJSON text: response
+                            echo response
+                            if (health.version == "${BUILD_NUMBER}") {
+                                echo "Verified deployment of version ${BUILD_NUMBER}"
+                                break // Sale del bucle si la versión coincide
+                            } else {
+                                echo "Current version ${health.version} not match with ${BUILD_NUMBER}"
+                            }
+                        } catch (Exception e) {
+                            // Maneja el caso en que curl falla porque el servidor no responde
+                            echo "The server di not respond or an error: ${e.getMessage()}"
                         }
-                    } catch (Exception e) {
-                        // Maneja el caso en que curl falla porque el servidor no responde
-                        echo "El servidor no respondió o ocurrió un error: ${e.getMessage()}"
-                    }
 
-                    if (retries-- == 0) {
-                        error "Versión ${BUILD_NUMBER} no encontrada después de varios intentos."
-                    }
+                        if (retries-- == 0) {
+                            error "Versión ${BUILD_NUMBER} no found after several tries."
+                        }
 
-                    echo "Esperando para reintentar... Intentos restantes: ${retries}"
-                    sleep 5 // Espera 10 segundos antes de reintentar
-                }
+                        echo "Waiting for retry... remaining attempts: ${retries}"
+                        sleep 10 // Espera 10 segundos antes de reintentar
+                    }
                 }
             }
         }
