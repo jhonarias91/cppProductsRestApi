@@ -9,6 +9,12 @@ RUN apt-get update && apt-get install -y \
     libcpprest-dev \
     && rm -rf /var/lib/apt/lists/*
 
+# Añade un argumento para el número de build, con un valor por defecto
+ARG BUILD_NUMBER=locV0.0.1
+
+# Establece la variable de entorno APP_VERSION con el valor de BUILD_NUMBER
+ENV APP_VERSION=$BUILD_NUMBER
+
 # Se copian los archivos del proyecto al contenedor
 COPY . /app
 

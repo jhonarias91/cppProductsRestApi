@@ -50,7 +50,7 @@ pipeline {
             steps {
                 script {
                     // Se crea la imágen para el Docker
-                    sh "docker build -t ${DOCKER_IMAGE} ."                    
+                    sh "docker build -t ${DOCKER_IMAGE} --build-arg BUILD_NUMBER=${BUILD_NUMBER} ."                    
                 }
             }
         }
@@ -66,7 +66,7 @@ pipeline {
                 }
             }
         }
-        stage("Docker Run :Development") {
+        stage("Docker Run :Staging") {
             steps {
                 script {                    
                     // Se detiene y elimina el contenedor si ya está en ejecución
