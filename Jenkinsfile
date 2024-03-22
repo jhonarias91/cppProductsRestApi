@@ -128,10 +128,11 @@ EOL
         }
         steps {
             script {                
-                int retries = 15
+                int retries = 20
                 while (true) {
                     def response = sh(script: "curl --silent 'http://productsapiproduction.eba-ijpjgjya.us-east-2.elasticbeanstalk.com/health'", returnStdout: true).trim()
                     def health = readJSON text: response
+                    echo response
                     if (health.version == "${BUILD_NUMBER}") {
                         echo "Verified deployment of version ${BUILD_NUMBER}"
                         break
