@@ -407,8 +407,17 @@ Agregar el token de auth. Ver en la página
   
   ```cat /var/log/eb-engine.log```
 
+Ver contenido del container
+ 
+  ```docker exec -it containerId/Name sh```
+
+*Conectar ssh*
+    
+    ```chmod 400 key.pem```
+    ```sh -i key.pem ubuntu@18.222.182.186```
+    ```sh -i key.pem ec2-user@18.222.182.186```
 
  ### Notes
- - Delete eventually docker images
+ - Delete eventually docker images conectarse a las EC2 de staging y prod.
   ```docker image prune -a```
 
