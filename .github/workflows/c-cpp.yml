@@ -56,3 +56,4 @@ jobs:
         ./cppProductsRestApi/src/productsapp &   
         ./cppProductsRestApi/src/runIntegrationTest
         kill %1  
+
