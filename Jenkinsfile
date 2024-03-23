@@ -127,7 +127,7 @@ EOL
         }
         stage("Verify Deployment") {
             when {
-                expression { false } // Disabled stage
+                expression { true } // Disabled stage
             }
             steps {
                 script {                
