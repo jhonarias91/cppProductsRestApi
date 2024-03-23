@@ -26,17 +26,17 @@ pipeline {
         }  
         stage("UnitTest")  {
             //Se captura el error, aunque falle, siempre retornar+a SUCES. pero la etapa es marcada como FAILURE
-            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                steps {
+            steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                         sh "g++ -std=c++11 -o runUnitTest ./src/unitTest.cpp ./src/functions.cpp  -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto"
                         sh "./runUnitTest --gtest_output=\'xml:unittestresults.xml\' "
                     }
-                post{
-                    always {
+             }
+             post{
+                always {
                         junit 'unittestresults.xml'
                     }
                 } 
-             }
         }
         stage("IntegrationTest")  {
         steps {
