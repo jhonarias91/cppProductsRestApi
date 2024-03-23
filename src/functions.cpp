@@ -189,7 +189,7 @@ json::value getData(int id, std::map<int, std::pair<std::string, double>> data){
     if (data.find(id) != data.end()) {
         auto foundData = data[id];
         
-        response[U("id")] = json::value::number(id);
+        response[U("id")] = json::value::number(id+2);
         response[U("name")] = json::value::string(foundData.first);
         response[U("price")] = json::value::number(foundData.second);        
     }
@@ -200,7 +200,7 @@ bool insertRecord(int id, const std::string name, double price) {
     try {
         std::ofstream file("data.csv", std::ios::app); // Open in append mode
         if (!file.is_open()) {
-            return false;
+            return false; 
         }
         file << id << "," << name  << "," << price << std::endl;
         return true;
