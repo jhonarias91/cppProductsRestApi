@@ -47,13 +47,13 @@ jobs:
 
     - name: Run program and unit tests
       run: |
-        ./cppProductsRestApi/src/productsapp &   
-        ./cppProductsRestApi/src/runUnitTest  
+        ./cppProductsRestApi/productsapp &   
+        ./cppProductsRestApi/runUnitTest  
         kill %1        
         
     - name: Run program and integration tests
       run: |
-        ./cppProductsRestApi/src/productsapp &   
-        ./cppProductsRestApi/src/runIntegrationTest
+        ./cppProductsRestApi/productsapp &   
+        ./cppProductsRestApi/runIntegrationTest
         kill %1  
 
