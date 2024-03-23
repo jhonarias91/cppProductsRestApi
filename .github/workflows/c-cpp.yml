@@ -2,22 +2,58 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ master ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ master ]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
+    timeout-minutes: 6  # Establece el límite de tiempo en 6 minutos
+
     steps:
-    - uses: actions/checkout@v3
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt install -y git g++ libboost-all-dev libssl-dev libcpprest-dev libgtest-dev
+        dpkg -l | grep libcpprest
+        
+
+    - name: Clone project
+      run: git clone https://github.com/srodriguev/cppProductsRestApi.git
+
+    - name: Set permissions
+      run: sudo chmod -R 777 cppProductsRestApi
+
+    - name: Compile program
+      run: |
+        cd cppProductsRestApi/src
+        g++ -std=c++11 -o productsapp  main.cpp functions.cpp -lcpprest -lboost_system -lssl -lcrypto
+
+    - name: Compile unit tests
+      run: |
+        cd cppProductsRestApi/src
+        g++ -std=c++11 -o runUnitTest unitTest.cpp functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto
+        
+    - name: Compile Integration tests
+      run: |
+        cd cppProductsRestApi/src
+        g++ -std=c++11 -o runIntegrationTest integrationTest.cpp functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto
+
+    - name: Run program and unit tests
+      run: |
+        ./cppProductsRestApi/src/productsapp &   
+        ./cppProductsRestApi/src/runUnitTest  
+        kill %1        
+        
+    - name: Run program and integration tests
+      run: |
+        ./cppProductsRestApi/src/productsapp &   
+        ./cppProductsRestApi/src/runIntegrationTest
+        kill %1  
+
