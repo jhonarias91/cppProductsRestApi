@@ -33,7 +33,7 @@ jobs:
     - name: Compile program
       run: |
         cd cppProductsRestApi
-        g++ -std=c++11 -o productsapp  ./src/main.cpp f./src/unctions.cpp -lcpprest -lboost_system -lssl -lcrypto
+        g++ -std=c++11 -o productsapp  ./src/main.cpp ./src/functions.cpp -lcpprest -lboost_system -lssl -lcrypto
 
     - name: Compile unit tests
       run: |
