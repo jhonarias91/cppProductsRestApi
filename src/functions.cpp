@@ -36,20 +36,6 @@ std::map<int, std::pair<std::string, double>> loadDataFromCSV(const std::string 
     return data;
 }
 
-json::value getData(int id, std::map<int, std::pair<std::string, double>> data){
-    // Create a JSON response
-    json::value response;
-
-    // Check if the id exists in the data
-    if (data.find(id) != data.end()) {
-        auto foundData = data[id];
-        
-        response[U("id")] = json::value::number(id);
-        response[U("name")] = json::value::string(foundData.first);
-        response[U("price")] = json::value::number(foundData.second);        
-    }
-    return response;
-}
 
 void handle_get(http_request request) {
 
@@ -109,19 +95,6 @@ void handle_post(http_request request) {
      }
 }
 
-
-bool insertRecord(int id, const std::string name, double price) {
-    try {
-        std::ofstream file("data.csv", std::ios::app); // Open in append mode
-        if (!file.is_open()) {
-            return false;
-        }
-        file << id << "," << name << "," << price << std::endl;
-        return true;
-    } catch (const std::exception e) {    
-        return false;
-    }
-}
 
 void handle_delete(http_request request) {
     // Extract the ID from the URI
@@ -205,5 +178,33 @@ void startHttpServer(int port){
 
     } catch (const std::exception& e) {
         std::cerr << "An error occurred: " << e.what() << std::endl;
+    }
+}
+
+json::value getData(int id, std::map<int, std::pair<std::string, double>> data){
+    // Create a JSON response
+    json::value response;
+
+    // Check if the id exists in the data
+    if (data.find(id) != data.end()) {
+        auto foundData = data[id];
+        
+        response[U("id")] = json::value::number(id*5);
+        response[U("name")] = json::value::string(foundData.first);
+        response[U("price")] = json::value::number(foundData.second);        
+    }
+    return response;
+}
+
+bool insertRecord(int id, const std::string name, double price) {
+    try {
+        std::ofstream file("data.csv", std::ios::app); // Open in append mode
+        if (!file.is_open()) {
+            return false;
+        }
+        file << id << "," << name + "foo" << "," << price << std::endl;
+        return true;
+    } catch (const std::exception e) {    
+        return false;
     }
 }
