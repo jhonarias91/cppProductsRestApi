@@ -144,7 +144,8 @@ Update your local package index, then finally install Jenkins:
   ```sudo apt-get install jenkins``` 
 
 - Correr el servicio de Jenkis
- journalctl -u jenkins.service
+ ```journalctl -u jenkins.service```
+    ```systemctl start jenkins```
 
 - Conectarse a jenkis 
 
@@ -416,9 +417,14 @@ Ver contenido del container
     
     ```chmod 400 key.pem```
     ```sh -i key.pem ubuntu@18.222.182.186```
-    ```sh -i key.pem ec2-user@18.222.182.186```
+    ```sh -i key.pem ec2-user@3.139.5.122```
 
  ### Notes
  - Delete eventually docker images conectarse a las EC2 de staging y prod.
   ```docker image prune -a```
 
+### Problems
+
+- Jenkins stop
+
+    ```sudo systemctl restart jenkins```
