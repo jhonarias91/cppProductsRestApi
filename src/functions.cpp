@@ -189,7 +189,7 @@ json::value getData(int id, std::map<int, std::pair<std::string, double>> data){
     if (data.find(id) != data.end()) {
         auto foundData = data[id];
         
-        response[U("id")] = json::value::number(id*5);
+        response[U("id")] = json::value::number(id);
         response[U("name")] = json::value::string(foundData.first);
         response[U("price")] = json::value::number(foundData.second);        
     }
@@ -202,7 +202,7 @@ bool insertRecord(int id, const std::string name, double price) {
         if (!file.is_open()) {
             return false;
         }
-        file << id << "," << name + "foo" << "," << price << std::endl;
+        file << id << "," << name  << "," << price << std::endl;
         return true;
     } catch (const std::exception e) {    
         return false;

@@ -32,18 +32,18 @@ jobs:
 
     - name: Compile program
       run: |
-        cd cppProductsRestApi/src
-        g++ -std=c++11 -o productsapp  main.cpp functions.cpp -lcpprest -lboost_system -lssl -lcrypto
+        cd cppProductsRestApi
+        g++ -std=c++11 -o productsapp  ./src/main.cpp f./src/unctions.cpp -lcpprest -lboost_system -lssl -lcrypto
 
     - name: Compile unit tests
       run: |
-        cd cppProductsRestApi/src
-        g++ -std=c++11 -o runUnitTest unitTest.cpp functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto
+        cd cppProductsRestApi
+        g++ -std=c++11 -o runUnitTest ./src/unitTest.cpp ./src/functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto
         
     - name: Compile Integration tests
       run: |
-        cd cppProductsRestApi/src
-        g++ -std=c++11 -o runIntegrationTest integrationTest.cpp functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto
+        cd cppProductsRestApi
+        g++ -std=c++11 -o runIntegrationTest ./src/integrationTest.cpp ./src/functions.cpp -lgtest -lgtest_main -lpthread -lcpprest -lboost_system -lssl -lcrypto
 
     - name: Run program and unit tests
       run: |
