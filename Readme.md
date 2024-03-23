@@ -31,7 +31,7 @@ Ubicarse en el root del proyecto:
 
 - std=c++11: Especifica el estándar de C++ a usar, necesario para algunas características de C++ usadas con libcpprest.
       main.cpp: El nombre del source.cpp
-- o productsapp: Especifica el nombre del archivo de salida ejecutable. Puedes cambiar my_service por cualquier otro nombre que prefieras para tu programa.
+- o productsapp: Especifica el nombre del archivo de salida ejecutable. Puedes cambiarlo por cualquier otro nombre que prefieras para tu programa.
 - lcpprest: Vincula el programa con la biblioteca libcpprest.
 - lboost_system: Vincula el programa con la biblioteca Boost.System, que es una de las dependencias de libcpprest.
 - lssl -lcrypto: Vincula el programa con las bibliotecas OpenSSL, que son necesarias para el soporte de HTTPS y otras características de seguridad.
@@ -43,40 +43,6 @@ Ubicarse en el root del proyecto:
 - *Consumirlo Local*
     ```curl "http://localhost:4300/health"```
     ```curl "http://localhost:4300?id=200"```
-    
- #### *End-points:* 
-
-- _*Get*_
-
-    - http://localhost:4300?id={productId}
-    
-     
-    Obtiene el producto por su {productId}
-
-    
-    -  http://localhost:4300/health
-
-    Healt: verifica ele stado actual del servidor
-
- - _*Delete*_
-
-    - http://localhost:4300/delete/{productId}
-    
-     Elimina un producto por su {productId}
-
-  
-- _*Post*_
-
-    - http://localhost:4300/insert
-    
-        Inserta un nuevo producto
-
-    {
-        "id": int,
-        "name": String,
-        "price": float
-    }
-
     
 ### Testing
 
@@ -102,7 +68,7 @@ Ubicarse en el root del proyecto:
 
 ### Jenkis en EC2
 
-1. Crear una EC2 y aisgnar un nombre como: _JenkisServer_
+1. Crear una EC2 y aisgnar un nombre como: _JenkinsServer_
 2. Seleccionar la AMI. _Ubuntu Server 22.04 Free tier_
 3. Instace type: _t2.midle_ (Con una inferior es posible que el container se detenga)
 4. Seleccionar o crear Key pair.
@@ -400,7 +366,6 @@ Agregar el token de auth. Ver en la página
 
 ```ngrok http http://localhost:8080```
 
-
 ### Logs
 
 - Log beansttalk 
@@ -428,3 +393,39 @@ Ver contenido del container
 - Jenkins stop
 
     ```sudo systemctl restart jenkins```
+
+
+ #### *End-points:* 
+
+- _*Get*_
+
+    - http://localhost:4300?id={productId}
+    
+     
+    Obtiene el producto por su {productId}
+
+    
+    -  http://localhost:4300/health
+
+    Healt: verifica ele stado actual del servidor
+
+ - _*Delete*_
+
+    - http://localhost:4300/delete/{productId}
+    
+     Elimina un producto por su {productId}
+
+  
+- _*Post*_
+
+    - http://localhost:4300/insert
+    
+        Inserta un nuevo producto
+
+    {
+        "id": int,
+        "name": String,
+        "price": float
+    }
+
+    
